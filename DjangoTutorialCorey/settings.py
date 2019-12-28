@@ -21,10 +21,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = '9ycn_q0wcuo4g33t-(o_t=si#x&!m1l4@2^y$01-f^2t-_%x@w'
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = '9ycn_q0wcuo4g33t-(o_t=si#x&!m1l4@2^y$01-f^2t-_%x@w' #!!!FOR LOCAL USE!!!
+#SECRET_KEY = os.environ.get('SECRET_KEY') !!!DEPLOYED!!!
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = (os.environ.get('DEBUG') == 'True')
 
 ALLOWED_HOSTS = ['zekadjangoapp.herokuapp.com']
 
