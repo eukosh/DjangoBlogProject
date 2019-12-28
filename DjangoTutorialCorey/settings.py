@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #SECRET_KEY = '9ycn_q0wcuo4g33t-(o_t=si#x&!m1l4@2^y$01-f^2t-_%x@w' #!!!FOR LOCAL USE!!!
 SECRET_KEY = os.environ.get('SECRET_KEY') #!!!DEPLOYED!!!
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = (os.environ.get('DEBUG') == 'True')
+DEBUG = True
 
 ALLOWED_HOSTS = ['zekadjangoapp.herokuapp.com']
 
